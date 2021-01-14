@@ -109,6 +109,7 @@ class Chats extends Component {
     const { user } = this.props
 
     createMessage(this.state.chat, user)
+      // .then(console.log(this.state.chat))
       .then(response => {
         this.setState({
           createdId: response.data._id

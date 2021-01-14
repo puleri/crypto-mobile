@@ -5,7 +5,7 @@ import { v4 as uuid } from 'uuid'
 import AuthenticatedRoute from './components/AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from './components/AutoDismissAlert/AutoDismissAlert'
 import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
+// import Footer from './components/Footer/Footer'
 import SignUp from './components/SignUp/SignUp'
 import SignIn from './components/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
@@ -104,7 +104,6 @@ class App extends Component {
         </main>
         <Route exact path="/channels" component={SecondPage} />
         <Route exact path="/settings" component={colorPicker} />
-        <Route path='/' component={Footer} />
         {/* <Route exact path="/chats" component={ThirdPage} /> */}
       </Fragment>
     )
