@@ -213,7 +213,7 @@ class Chats extends Component {
           <Row className="justify-content-md-center">
             <Col md={11}>
               <Form.Group>
-                <Form.Control controlId="Form.ControlTextarea"
+                <Form.Control controlid="Form.ControlTextarea"
                   as="textarea"
                   placeholder="Type A Message Here"
                   name="text"
