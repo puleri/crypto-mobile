@@ -223,7 +223,7 @@ class Chats extends Component {
               </Form.Group>
             </Col>
             <Col md={1}>
-              <Button variant="info" type="submit" className="sendMessageButton">Send</Button>
+              <Button variant="success" type="submit" className="sendMessageButton">Send</Button>
             </Col>
           </Row>
         </Form>

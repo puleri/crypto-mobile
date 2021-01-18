@@ -29,4 +29,13 @@
 
 .navbar-stuff {
   margin-bottom: 20px;
+  position: relative;
+}
+
+.nav-margin {
+  margin: 5px;
+}
+
+.navbar-crypto :hover {
+  background-color: #74c466;
 }

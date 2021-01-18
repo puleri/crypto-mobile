@@ -4,33 +4,33 @@
   margin: 40px;
 }
 
-.firstPage_content {
-  font-size: 40px;
-  text-align: center;
-  display: inline;
-  position: absolute;
-  bottom: 50%;
-  left: 29%;
-  color: white;
-  background-color: black;
-  border-radius: 15%;
-}
-
-.firstPage_content2 {
-  font-size: 40px;
-  text-align: center;
-  display: inline;
-  position: absolute;
-  bottom: 40%;
-  left: 20%;
-  color: white;
-  background-color: black;
-  border-radius: 15%;
-}
+// .firstPage_content {
+//   font-size: 40px;
+//   text-align: center;
+//   display: inline;
+//   position: absolute;
+//   bottom: 50%;
+//   left: 29%;
+//   color: white;
+//   background-color: black;
+//   border-radius: 15%;
+// }
+//
+// .firstPage_content2 {
+//   font-size: 40px;
+//   text-align: center;
+//   display: inline;
+//   position: absolute;
+//   bottom: 40%;
+//   left: 20%;
+//   color: white;
+//   background-color: black;
+//   border-radius: 15%;
+// }
 
 body {
   // background-image: url('../images/5bfbc6fc218ebe70-bees-bombs-rainbow-spiral.gif');
-  background-size: cover;
+  // background-size: cover;
 }
 
 // controls the area around home
@@ -38,7 +38,7 @@ body {
   background-color: black;
   font-size: 300px;
   &:hover {
-    background-color: red;
+    background-color: #74c466;
     text-decoration: underline;
   }
 }
@@ -51,10 +51,10 @@ body {
 // controls the area around sign up, sign in
 .nav-link {
   background-color: black;
-  font-size: 111%;
-  border-radius: 50px;
+  // font-size: 111%;
+  // border-radius: 50px;
   &:hover {
-    background-color: red;
+    background-color: #74c466;
     text-decoration: underline;
   }
 }
@@ -63,4 +63,12 @@ body {
 .navbar {
   background-color: transparent;
   color: black;
+}
+
+.navbar-crypto {
+  margin-left: 30px;
+  background-color: white;
+  width: 40px;
+  background-image: url('../images/Crypto_Icon.png');
+  background-size: cover;
 }

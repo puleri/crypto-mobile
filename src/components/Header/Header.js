@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-// import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+// import Col from 'react-bootstrap/Col'
 
 const navBarTextStyle = {
   color: 'white'
@@ -14,15 +16,25 @@ const navBarTextStyle = {
 
 const authenticatedOptions = (
   <Fragment>
-    <Nav.Link href="#change-password" style={navBarTextStyle}>Change Password</Nav.Link>
-    <Nav.Link href="#sign-out" style={navBarTextStyle}>Sign Out</Nav.Link>
+    <Container>
+      <Row>
+        <Nav.Link className="nav-margin" href="#change-password" style={navBarTextStyle}>Change Password</Nav.Link>
+        <Nav.Link className="nav-margin" href="#sign-out" style={navBarTextStyle}>Sign Out</Nav.Link>
+        <Nav.Link className="nav-margin navbar-crypto" target="_blank" href="https://www.google.com/search?q=apex+leaks"></Nav.Link>
+      </Row>
+    </Container>
   </Fragment>
 )
 
 const unauthenticatedOptions = (
   <Fragment>
-    <Nav.Link href="#sign-up" style={navBarTextStyle}>Sign Up</Nav.Link>
-    <Nav.Link href="#sign-in" style={navBarTextStyle}>Sign In</Nav.Link>
+    <Container className="navbar-stuff">
+      <Row>
+        <Nav.Link className="nav-margin" style={navBarTextStyle} href="#sign-up">Sign Up</Nav.Link>
+        <Nav.Link className="nav-margin" style={navBarTextStyle} href="#sign-in">Sign In</Nav.Link>
+        <Nav.Link className="nav-margin navbar-crypto" target="_blank" href="https://www.google.com/search?q=apex+leaks"></Nav.Link>
+      </Row>
+    </Container>
   </Fragment>
 )
 
@@ -34,22 +46,24 @@ const unauthenticatedOptions = (
 
 const welcomeMessageStyle = {
   color: 'white',
-  padding: '10px',
+  textAlign: 'center',
+  padding: '2px',
+  paddingTop: '10px',
+  marginTop: '5px',
+  width: '160px',
+  height: '40px',
   fontFamily: 'Arial',
-  fontSize: '25px',
-  position: 'absolute',
-  top: '10%',
-  left: '25%',
-  backgroundColor: 'black',
-  borderRadius: '25%'
+  fontSize: '14px',
+  position: 'relative',
+  backgroundColor: 'black'
 }
 
 const Header = ({ user }) => (
-  <Navbar className="navbar-stuff" variant="dark" expand="md">
+  <Navbar className="navbar-stuff" variant="dark">
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
-        { user && <span className="navbar-text mr-2" style={welcomeMessageStyle}>Welcome, {user.email}</span>}
+        { user && <span className="navbar-text mr-2" style={welcomeMessageStyle}>{user.email}</span>}
         {/* { alwaysOptions } */}
         { user ? authenticatedOptions : unauthenticatedOptions }
       </Nav>
