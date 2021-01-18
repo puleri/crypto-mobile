@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Redirect, Link } from 'react-router-dom'
 import { chatUpdate } from '../../api/chat'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
 const UpdateChat = props => {
   const [chat, setChat] = useState({ text: '' })
@@ -28,12 +30,12 @@ const UpdateChat = props => {
       // .then(() => props.history.push('/chat-show/' + match.params.chatId))
       .then(() => msgAlert({
         heading: 'Update successful',
-        message: 'Message has been edited',
+        message: 'you have edited the message.',
         variant: 'success'
       }))
       .catch(err => msgAlert({
         heading: 'Update failed',
-        message: 'WhOOPs looks like you are not the owner of this message ' + err.message,
+        message: 'hey friend, you have to own the message to edit it. ' + err.message,
         variant: 'danger'
       }))
   }
@@ -46,17 +48,20 @@ const UpdateChat = props => {
 
   return (
     <React.Fragment>
-      <h1>Update Message</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          placeholder="Edit Message"
-          value={chat.text}
-          onChange={handleChange}
-          name="text"
-        />
-        <button type="submit">Update Chat</button>
-      </form>
-      <Link to="/chats" className="backButton">Back</Link>
+      <Link to="/chats">Back</Link>
+      <h5>Update Message</h5>
+      <Form onSubmit={handleSubmit}>
+        <Form.Group>
+          <Form.Control
+            as="input"
+            placeholder="type editted message here"
+            value={chat.text}
+            onChange={handleChange}
+            name="text"
+          />
+        </Form.Group>
+        <Button variant="success" type="submit">Update</Button>
+      </Form>
     </React.Fragment>
   )
 }

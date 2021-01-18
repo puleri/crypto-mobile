@@ -29,6 +29,8 @@
 // }
 
 body {
+  background-image: url('../images/flower-glitch.jpeg');
+  background-size: cover;
   // background-image: url('../images/5bfbc6fc218ebe70-bees-bombs-rainbow-spiral.gif');
   // background-size: cover;
 }
@@ -68,7 +70,8 @@ body {
 .navbar-crypto {
   margin-left: 30px;
   background-color: white;
-  width: 40px;
-  background-image: url('../images/Crypto_Icon.png');
+  width: 100px;
+  height: 100px;
+  background-image: url('../images/flower-glitch.jpeg');
   background-size: cover;
 }

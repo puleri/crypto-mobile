@@ -7,10 +7,10 @@ import Col from 'react-bootstrap/Col'
 const FirstPage = () => (
   <Container>
     <Row>
-      <Col>Welcome to Crypto-Mobile.</Col>
+      <Col><h5>hi. welcome to whispers.</h5></Col>
     </Row><br />
     <Row>
-      <Col>Create an account to join the message board. Be sure to use a password you do not use anywhere else to protect your privacy.</Col>
+      <Col>create an account to join the message board. be sure to use a password you do not use anywhere else to protect your privacy.</Col>
     </Row>
   </Container>
 )

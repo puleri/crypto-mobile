@@ -215,7 +215,7 @@ class Chats extends Component {
               <Form.Group>
                 <Form.Control controlid="Form.ControlTextarea"
                   as="textarea"
-                  placeholder="Type A Message Here"
+                  placeholder="type a message here"
                   name="text"
                   value={this.state.chat.text}
                   onChange={this.handleInputChange}

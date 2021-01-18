@@ -20,7 +20,6 @@ const authenticatedOptions = (
       <Row>
         <Nav.Link className="nav-margin" href="#change-password" style={navBarTextStyle}>Change Password</Nav.Link>
         <Nav.Link className="nav-margin" href="#sign-out" style={navBarTextStyle}>Sign Out</Nav.Link>
-        <Nav.Link className="nav-margin navbar-crypto" target="_blank" href="https://www.google.com/search?q=apex+leaks"></Nav.Link>
       </Row>
     </Container>
   </Fragment>
@@ -32,7 +31,6 @@ const unauthenticatedOptions = (
       <Row>
         <Nav.Link className="nav-margin" style={navBarTextStyle} href="#sign-up">Sign Up</Nav.Link>
         <Nav.Link className="nav-margin" style={navBarTextStyle} href="#sign-in">Sign In</Nav.Link>
-        <Nav.Link className="nav-margin navbar-crypto" target="_blank" href="https://www.google.com/search?q=apex+leaks"></Nav.Link>
       </Row>
     </Container>
   </Fragment>
