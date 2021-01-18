@@ -29,10 +29,17 @@
 // }
 
 body {
-  background-image: url('../images/flower-glitch.jpeg');
+  background-image: url('../images/flower-glitch.png');
   background-size: cover;
   // background-image: url('../images/5bfbc6fc218ebe70-bees-bombs-rainbow-spiral.gif');
   // background-size: cover;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    background-image: url('../images/flower-square.png');
+    background-size: cover;
+  }
 }
 
 // controls the area around home
@@ -72,6 +79,5 @@ body {
   background-color: white;
   width: 100px;
   height: 100px;
-  background-image: url('../images/flower-glitch.jpeg');
   background-size: cover;
 }
