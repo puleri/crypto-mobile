@@ -227,6 +227,7 @@ class Chats extends Component {
             </Col>
           </Row>
         </Form>
+        <p className="disclaimer">*disclaimer: this is a public thread. for your own safety, do not post any personal or sensitive information.*</p>
       </Container>
     )
   }

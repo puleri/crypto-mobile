@@ -1,16 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import React, { Fragment, useState } from 'react'
-// import ReactDOM from 'react-dom'
-// import Modal, { Button } from 'react-modal'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 
 import './secondPage.scss'
 
 const SecondPage = () => (
-  <div>
-    <p className="secondPage">Pick a channel</p>
-    <Link to="/chats" className="DefaultChannel1">English 1</Link>
-  </div>
+  <Container>
+    <Row>
+      <h5 className="secondPage">now, time to join the main channel. (more to be added).</h5>
+    </Row><br />
+    <Row>
+      <Link to="/chats" className="DefaultChannel1">main thread</Link>
+    </Row>
+  </Container>
 )
 
 // modals are to complicated in react do later

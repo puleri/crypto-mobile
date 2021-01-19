@@ -48,8 +48,8 @@ const UpdateChat = props => {
 
   return (
     <React.Fragment>
-      <Link to="/chats">Back</Link>
-      <h5>Update Message</h5>
+      <Link className="back" to="/chats">Back</Link><br /><br />
+      <h5>update message</h5>
       <Form onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Control
