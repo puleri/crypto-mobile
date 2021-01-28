@@ -49,7 +49,8 @@ class ChangePassword extends Component {
     const { oldPassword, newPassword } = this.state
 
     return (
-      <div className="row">
+      <React.Fragment>
+        <Link to="/chats" className="back">Back</Link>
         <div className="col-sm-10 col-md-8 mx-auto mt-5">
           <h3 className="signUpStyle" style={changePasswordStyle}>Change Password</h3>
           <Form onSubmit={this.onChangePassword}>
@@ -76,15 +77,14 @@ class ChangePassword extends Component {
               />
             </Form.Group>
             <Button
-              variant="primary"
+              variant="success"
               type="submit"
             >
               Submit
             </Button>
           </Form>
         </div>
-        <Link to="/chats" className="backButton">Back</Link>
-      </div>
+      </React.Fragment>
     )
   }
 }
