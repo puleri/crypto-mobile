@@ -211,8 +211,8 @@ class Chats extends Component {
         </Row>
         <Form onSubmit={this.onCreateMessage}>
           <Row className="justify-content-md-center">
-            <Col md={11}>
-              <Form.Group>
+            <Col>
+              <Form.Group className="textarea-createMessage">
                 <Form.Control controlid="Form.ControlTextarea"
                   as="textarea"
                   placeholder="type a message here"
@@ -221,8 +221,6 @@ class Chats extends Component {
                   onChange={this.handleInputChange}
                 />
               </Form.Group>
-            </Col>
-            <Col md={1}>
               <Button variant="success" type="submit" className="sendMessageButton">Send</Button>
             </Col>
           </Row>
